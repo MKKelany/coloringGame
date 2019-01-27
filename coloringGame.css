@@ -16,3 +16,8 @@ body{
     float: left;
     margin: 1.66%;
 }
+
+#options{
+    text-align: center;
+    background: white;
+}
