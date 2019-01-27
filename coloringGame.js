@@ -47,8 +47,8 @@ function tilesEvevntListeners(tiles, pickedColor){
                     assignColor(tiles,pickedColor);
                     document.querySelector("#result").textContent = "Correct";
                     document.querySelector("#subheader").style.backgroundColor = pickedColor;
+                    document.querySelector("#reset").textContent = "Try Again ?"
                 }else{
-
                     this.style.backgroundColor = document.querySelector("body").style.backgroundColor;
                     document.querySelector("#result").textContent = "Try Again";
                 }
@@ -63,5 +63,6 @@ function newGameEventListener(tiles){
         document.querySelector("#result").textContent = "";
         var pickedColor = colors[generateRandom(tiles.length, 0)];
         document.querySelector("#pickedColor").textContent = pickedColor;
+        document.querySelector("#reset").textContent = "New Game"
     })
 }
