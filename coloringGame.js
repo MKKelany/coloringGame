@@ -1,7 +1,7 @@
 var tiles = document.querySelectorAll(".tile");
 var picked = document.querySelector("#pickedColor");
 var result = document.querySelector("#result");
-var header = document.querySelector("#subheader");
+var header = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var easybtn = document.querySelector("#easybtn");
 var hardbtn = document.querySelector("#hardbtn");
@@ -24,7 +24,7 @@ resetButton.addEventListener('click',function(){
 
     result.textContent = ""; 
     resetButton.textContent = "New Game";
-    header.style.background = body.style.background;
+    header.style.background = "steelblue";
 });
 
 easybtn.addEventListener('click',function(){
